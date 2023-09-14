@@ -5,18 +5,21 @@
   </head>
   <body>
     <h1>テストだよ！</h1>
-    <iframe width="1600" height="1000" frameborder="0"
-  src="https://observablehq.com/embed/4d15de9d594af71c@799?cells=gridDisplay&api_key=a62c1cb8471c60be50c84a07b75bcb99179c1fca"></iframe>
 
-    <div id="observablehq-gridDisplay-a85de4b0"></div>
-<p>Credit: <a href="https://observablehq.com/d/4d15de9d594af71c@851">Wikipedia Recent Changes on Grid (Japanese) by SUGIMOTO Tatsuo</a></p>
+    <div id="observablehq-gridStyle-7647cf4f"></div>
+<div id="observablehq-gridDisplay-7647cf4f"></div>
+<div id="observablehq-changes-7647cf4f"></div>
+<p>Credit: <a href="https://observablehq.com/d/4d15de9d594af71c@854">Wikipedia Recent Changes on Grid (Japanese) by SUGIMOTO Tatsuo</a></p>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/4d15de9d594af71c@851.js?v=3&api_key=f1d67239978400f1c2e6b8e7deae5622d1c132c0";
+import define from "https://api.observablehq.com/d/4d15de9d594af71c@854.js?v=3&api_key=b3f72c116d16bdb04dea6f27297f9e50b0451dea";
 new Runtime().module(define, name => {
-  if (name === "gridDisplay") return new Inspector(document.querySelector("#observablehq-gridDisplay-a85de4b0"));
+  if (name === "gridStyle") return new Inspector(document.querySelector("#observablehq-gridStyle-7647cf4f"));
+  if (name === "gridDisplay") return new Inspector(document.querySelector("#observablehq-gridDisplay-7647cf4f"));
+  if (name === "changes") return new Inspector(document.querySelector("#observablehq-changes-7647cf4f"));
+  return ["appendChanges"].includes(name);
 });
 </script>
     
