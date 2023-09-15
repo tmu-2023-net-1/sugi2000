@@ -1,27 +1,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>GitHub Pagesのテスト</title>
+    <title>イマノコトバ</title>
   </head>
   <body>
-    <h1>テストだよ！</h1>
 
-    <div id="observablehq-gridStyle-7647cf4f"></div>
-<div id="observablehq-gridDisplay-7647cf4f"></div>
-<div id="observablehq-changes-7647cf4f"></div>
-<p>Credit: <a href="https://observablehq.com/d/4d15de9d594af71c@854">Wikipedia Recent Changes on Grid (Japanese) by SUGIMOTO Tatsuo</a></p>
+<div id="observablehq-gridDisplay-f0acec67"></div>
+<div id="observablehq-changes-f0acec67" style="display:none;"></div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/4d15de9d594af71c@854.js?v=3&api_key=b3f72c116d16bdb04dea6f27297f9e50b0451dea";
+import define from "https://api.observablehq.com/d/4d15de9d594af71c@1106.js?v=3&api_key=122f96d27d3fb4c50d39f896519fddcb06a0492b";
 new Runtime().module(define, name => {
-  if (name === "gridStyle") return new Inspector(document.querySelector("#observablehq-gridStyle-7647cf4f"));
-  if (name === "gridDisplay") return new Inspector(document.querySelector("#observablehq-gridDisplay-7647cf4f"));
-  if (name === "changes") return new Inspector(document.querySelector("#observablehq-changes-7647cf4f"));
+  if (name === "gridDisplay") return new Inspector(document.querySelector("#observablehq-gridDisplay-f0acec67"));
+  if (name === "changes") return new Inspector(document.querySelector("#observablehq-changes-f0acec67"));
   return ["appendChanges"].includes(name);
 });
 </script>
-    
+
   </body>
 </html>
