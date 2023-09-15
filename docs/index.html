@@ -5,19 +5,21 @@
   </head>
   <body>
 
-<div id="observablehq-gridDisplay-f0acec67"></div>
-<div id="observablehq-changes-f0acec67" style="display:none;"></div>
+<div id="observablehq-gridStyle-2afda1b9"></div>
+<div id="observablehq-gridDisplay-2afda1b9"></div>
+<div id="observablehq-changes-2afda1b9" style="display:none;"></div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/4d15de9d594af71c@1106.js?v=3&api_key=122f96d27d3fb4c50d39f896519fddcb06a0492b";
+import define from "https://api.observablehq.com/d/4d15de9d594af71c@1109.js?v=3&api_key=122f96d27d3fb4c50d39f896519fddcb06a0492b";
 new Runtime().module(define, name => {
-  if (name === "gridDisplay") return new Inspector(document.querySelector("#observablehq-gridDisplay-f0acec67"));
-  if (name === "changes") return new Inspector(document.querySelector("#observablehq-changes-f0acec67"));
+  if (name === "gridStyle") return new Inspector(document.querySelector("#observablehq-gridStyle-2afda1b9"));
+  if (name === "gridDisplay") return new Inspector(document.querySelector("#observablehq-gridDisplay-2afda1b9"));
+  if (name === "changes") return new Inspector(document.querySelector("#observablehq-changes-2afda1b9"));
   return ["appendChanges"].includes(name);
 });
 </script>
-
+    
   </body>
 </html>
